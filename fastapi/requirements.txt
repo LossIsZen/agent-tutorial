@@ -1,0 +1,16 @@
+# requirements.txt
+# Python >= 3.10
+# 安装命令: pip install -r requirements.txt
+# 启动命令: uvicorn main:app --reload
+
+# Web 框架
+fastapi==0.136.1
+
+# ASGI 服务器（standard 额外包含 uvloop、websockets、watchfiles 等）
+uvicorn[standard]==0.46.0
+
+# 数据校验（FastAPI 核心依赖，显式锁定版本）
+pydantic==2.13.3
+
+# Form 表单 & 文件上传支持（使用 Form/File 必须安装）
+python-multipart==0.0.27
